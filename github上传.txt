@@ -1,0 +1,21 @@
+首先第一个要有文件
+把当前的作为本地仓库 添加到缓存区 到仓库
+git init  初始化
+git status
+git add readme.txt 添加文件到本地代码仓库
+git commit -m "write some comment" 提交到本地代码仓库 
+git remote add origin https://github.com/galian123/nodejs_http_server 本地代码仓库与github的代码仓库
+git remote -v：
+
+提交代码之前，先执行git pull origin master，让远程代码仓库与本地代码仓库进行同步。 
+然后执行git push origin master。
+
+
+
+使用git push origin master是出现如下问题；
+
+Username for ‘https://github.com‘:
+
+解决办法：
+
+git remote set-url origin git+ssh://git@github.com/username/reponame.git 
